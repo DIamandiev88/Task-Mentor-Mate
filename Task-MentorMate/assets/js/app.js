@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    //event
     $('#myBtn').click ( function() {
         let inputValue = $('#limit').val();
         let taskObj = new Task();
@@ -8,7 +7,6 @@ $(document).ready(function () {
         taskObj.generateMMLogo();
     });
 
-    // object
     function Task() {
         this.isValidWeight = false;
         this.fontWeight = 0;
@@ -26,7 +24,7 @@ $(document).ready(function () {
         };
 
         this.setWeightValue = function (weight)  {
-            let isSuccessValidation = this.validateWeight(weight); // true or false
+            let isSuccessValidation = this.validateWeight(weight);
 
             if (isSuccessValidation){
                 this.fontWeight = parseInt(weight);
@@ -45,8 +43,8 @@ $(document).ready(function () {
             logoDivSelect.empty();
             logoDivSelect2.empty();
             if (this.isValidWeight) {
-                for (let i = 0; i < this.rows; i++) {  //drawing rows
-                    for (let j = 0; j < this.fontWeight; j++) { //drawing columns
+                for (let i = 0; i < this.rows; i++) {  
+                    for (let j = 0; j < this.fontWeight; j++) { 
                         if (j % 2 !== 1) {
 
                             for (let k = 0; k < this.fontWeight - i; k++) {
