@@ -1,8 +1,8 @@
 # My Projects
-## Project "M M logo"
+## Project "MM logo"
 
 ### General info
-Console application that displays MM logo.
+Application for generating MM logo.
 	
 ### Technologies
 The Project is created with:
